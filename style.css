@@ -1,1 +1,43 @@
-/* Write your CSS Here. */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --cell-size: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row; 
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    outline: 1px dotted black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.player {
+    width: 110%;
+}
+
+.wall {
+    background-color: crimson;
+}
+
+.floor {
+    background-color: antiquewhite;
+}
+
+.start {
+    background-color: chartreuse;
+}
+
+.finish {
+    background-color: dodgerblue;
+}
+
